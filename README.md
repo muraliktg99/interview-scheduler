@@ -92,3 +92,7 @@ Response
     ]
 ]
 ```
+
+## Thankyou
+Interview scheduler is a simple API which help HR to get available slots
+Thankyou for reading and supporting
