@@ -129,5 +129,4 @@ dmypy.json
 .pyre/
 
 # Django stuffs
-migrations/
 *env/
