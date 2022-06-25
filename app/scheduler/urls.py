@@ -1,5 +1,12 @@
-from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from django.urls import path
+from .viewsets import PersonViewset, SearchViewset
+
+router = DefaultRouter()
+
+router.register(r'schedule', PersonViewset, basename='schedule')
 
 urlpatterns = [
-    path('api-auth/', include('rest_framework.urls'))
+    path('search/', SearchViewset.as_view(), name="search")
 ]
+urlpatterns += router.urls

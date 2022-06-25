@@ -1,3 +1,7 @@
+# Django
 from django.contrib import admin
 
-# Register your models here.
+# local Django
+from .models import Person
+
+admin.site.register(Person)
